@@ -61,4 +61,294 @@ bash: plugin: command not found
 ]0;ec2-user@ip-172-31-15-21:~/blog/app/views/posts[ec2-user@ip-172-31-15-21 posts]$ cd ..
 ]0;ec2-user@ip-172-31-15-21:~/blog/app/views[ec2-user@ip-172-31-15-21 views]$ cd ..
 ]0;ec2-user@ip-172-31-15-21:~/blog/app[ec2-user@ip-172-31-15-21 app]$ cd ..
-]0;ec2-user@ip-172-31-15-21:~/blog[ec2-
+]0;ec2-user@ip-172-31-15-21:~/blog[ec2-user@ip-172-31-15-21 blog]$ gint[K[Kt init
+Initialized empty Git repository in /home/ec2-user/blog/.git/
+]0;ec2-user@ip-172-31-15-21:~/blog[ec2-user@ip-172-31-15-21 blog]$ git add .
+]0;ec2-user@ip-172-31-15-21:~/blog[ec2-user@ip-172-31-15-21 blog]$ git remote add origin https://github.com/aruzin/blog.git
+]0;ec2-user@ip-172-31-15-21:~/blog[ec2-user@ip-172-31-15-21 blog]$ git commit -am " [Kfirst blog commit"
+[master (root-commit) c470f1b] first blog commit
+ Committer: EC2 Default User <ec2-user@ip-172-31-15-21.ap-southeast-2.compute.internal>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 117 files changed, 1922 insertions(+)
+ create mode 100644 .gitignore
+ create mode 100644 Gemfile
+ create mode 100644 Gemfile.lock
+ create mode 100644 README.rdoc
+ create mode 100644 Rakefile
+ create mode 100644 app/assets/images/.keep
+ create mode 100644 app/assets/javascripts/application.js
+ create mode 100644 app/assets/javascripts/comments.js.coffee
+ create mode 100644 app/assets/javascripts/posts.js.coffee
+ create mode 100644 app/assets/javascripts/sessions.js.coffee
+ create mode 100644 app/assets/javascripts/users.js.coffee
+ create mode 100644 app/assets/javascripts/welcome.js.coffee
+ create mode 100644 app/assets/stylesheets/application.css
+ create mode 100644 app/assets/stylesheets/comments.css.scss
+ create mode 100644 app/assets/stylesheets/posts.css.scss
+ create mode 100644 app/assets/stylesheets/scaffolds.css.scss
+ create mode 100644 app/assets/stylesheets/sessions.css.scss
+ create mode 100644 app/assets/stylesheets/users.css.scss
+ create mode 100644 app/assets/stylesheets/welcome.css.scss
+ create mode 100644 app/controllers/application_controller.rb
+ create mode 100644 app/controllers/comments_controller.rb
+ create mode 100644 app/controllers/concerns/.keep
+ create mode 100644 app/controllers/posts_controller.rb
+ create mode 100644 app/controllers/sessions_controller.rb
+ create mode 100644 app/controllers/users_controller.rb
+ create mode 100644 app/controllers/welcome_controller.rb
+ create mode 100644 app/helpers/application_helper.rb
+ create mode 100644 app/helpers/comments_helper.rb
+ create mode 100644 app/helpers/posts_helper.rb
+ create mode 100644 app/helpers/sessions_helper.rb
+ create mode 100644 app/helpers/users_helper.rb
+ create mode 100644 app/helpers/welcome_helper.rb
+ create mode 100644 app/mailers/.keep
+ create mode 100644 app/models/.keep
+ create mode 100644 app/models/comment.rb
+ create mode 100644 app/models/concerns/.keep
+ create mode 100644 app/models/post.rb
+ create mode 100644 app/models/user.rb
+ create mode 100644 app/views/layouts/application.html.erb
+ create mode 100644 app/views/posts/_header.html.erb
+ create mode 100644 app/views/posts/edit.html.erb
+ create mode 100644 app/views/posts/index.html.erb
+ create mode 100644 app/views/posts/install
+ create mode 100644 app/views/posts/new.html.erb
+ create mode 100644 app/views/posts/show.html.erb
+ create mode 100644 app/views/posts/typescript
+ create mode 100644 app/views/sessions/new.html.erb
+ create mode 100644 app/views/users/_form.html.erb
+ create mode 100644 app/views/users/edit.html.erb
+ create mode 100644 app/views/users/index.html.erb
+ create mode 100644 app/views/users/index.json.jbuilder
+ create mode 100644 app/views/users/new.html.erb
+ create mode 100644 app/views/users/show.html.erb
+ create mode 100644 app/views/users/show.json.jbuilder
+ create mode 100644 app/views/welcome/index.html.erb
+ create mode 100755 bin/bundle
+ create mode 100755 bin/rails
+ create mode 100755 bin/rake
+ create mode 100644 config.ru
+ create mode 100644 config/application.rb
+ create mode 100644 config/boot.rb
+ create mode 100644 config/database.yml
+ create mode 100644 config/environment.rb
+ create mode 100644 config/environments/development.rb
+ create mode 100644 config/environments/production.rb
+ create mode 100644 config/environments/test.rb
+ create mode 100644 config/initializers/backtrace_silencers.rb
+ create mode 100644 config/initializers/filter_parameter_logging.rb
+ create mode 100644 config/initializers/inflections.rb
+ create mode 100644 config/initializers/mime_types.rb
+ create mode 100644 config/initializers/secret_token.rb
+ create mode 100644 config/initializers/session_store.rb
+ create mode 100644 config/initializers/wrap_parameters.rb
+ create mode 100644 config/locales/en.yml
+ create mode 100644 config/routes.rb
+ create mode 100644 db/migrate/20131217031813_create_posts.rb
+ create mode 100644 db/migrate/20131218021344_create_comments.rb
+ create mode 100644 db/migrate/20131219025326_create_users.rb
+ create mode 100644 db/migrate/20131220014801_add_remember_token_to_users.rb
+ create mode 100644 db/migrate/20131226071900_add_password_to_users.rb
+ create mode 100644 db/migrate/20131227060817_add_writer_to_posts.rb
+ create mode 100644 db/schema.rb
+ create mode 100644 db/seeds.rb
+ create mode 100644 install
+ create mode 100644 lib/assets/.keep
+ create mode 100644 lib/tasks/.keep
+ create mode 100644 log/.keep
+ create mode 100644 public/404.html
+ create mode 100644 public/422.html
+ create mode 100644 public/500.html
+ create mode 100644 public/favicon.ico
+ create mode 100644 public/robots.txt
+ create mode 100644 test/controllers/.keep
+ create mode 100644 test/controllers/comments_controller_test.rb
+ create mode 100644 test/controllers/posts_controller_test.rb
+ create mode 100644 test/controllers/sessions_controller_test.rb
+ create mode 100644 test/controllers/users_controller_test.rb
+ create mode 100644 test/controllers/welcome_controller_test.rb
+ create mode 100644 test/fixtures/.keep
+ create mode 100644 test/fixtures/comments.yml
+ create mode 100644 test/fixtures/posts.yml
+ create mode 100644 test/fixtures/users.yml
+ create mode 100644 test/helpers/.keep
+ create mode 100644 test/helpers/comments_helper_test.rb
+ create mode 100644 test/helpers/posts_helper_test.rb
+ create mode 100644 test/helpers/sessions_helper_test.rb
+ create mode 100644 test/helpers/users_helper_test.rb
+ create mode 100644 test/helpers/welcome_helper_test.rb
+ create mode 100644 test/integration/.keep
+ create mode 100644 test/mailers/.keep
+ create mode 100644 test/models/.keep
+ create mode 100644 test/models/comment_test.rb
+ create mode 100644 test/models/post_test.rb
+ create mode 100644 test/models/user_test.rb
+ create mode 100644 test/test_helper.rb
+ create mode 100644 vendor/assets/javascripts/.keep
+ create mode 100644 vendor/assets/stylesheets/.keep
+]0;ec2-user@ip-172-31-15-21:~/blog[ec2-user@ip-172-31-15-21 blog]$ 
+]0;ec2-user@ip-172-31-15-21:~/blog[ec2-user@ip-172-31-15-21 blog]$ 
+]0;ec2-user@ip-172-31-15-21:~/blog[ec2-user@ip-172-31-15-21 blog]$ git push origin mastter[K[K[Ker
+Username for 'https://github.com': aruzin
+Password for 'https://aruzin@github.com': 
+Counting objects: 129, done.
+Compressing objects:   0% (1/116)   Compressing objects:   1% (2/116)   Compressing objects:   2% (3/116)   Compressing objects:   3% (4/116)   Compressing objects:   4% (5/116)   Compressing objects:   5% (6/116)   Compressing objects:   6% (7/116)   Compressing objects:   7% (9/116)   Compressing objects:   8% (10/116)   Compressing objects:   9% (11/116)   Compressing objects:  10% (12/116)   Compressing objects:  11% (13/116)   Compressing objects:  12% (14/116)   Compressing objects:  13% (16/116)   Compressing objects:  14% (17/116)   Compressing objects:  15% (18/116)   Compressing objects:  16% (19/116)   Compressing objects:  17% (20/116)   Compressing objects:  18% (21/116)   Compressing objects:  19% (23/116)   Compressing objects:  20% (24/116)   Compressing objects:  21% (25/116)   Compressing objects:  22% (26/116)   Compressing objects:  23% (27/116)   Compressing objects:  24% (28/116)   Compressing objects:  25% (29/116)   Compressing objects:  26% (31/116)   Compressing objects:  27% (32/116)   Compressing objects:  28% (33/116)   Compressing objects:  29% (34/116)   Compressing objects:  30% (35/116)   Compressing objects:  31% (36/116)   Compressing objects:  32% (38/116)   Compressing objects:  33% (39/116)   Compressing objects:  34% (40/116)   Compressing objects:  35% (41/116)   Compressing objects:  36% (42/116)   Compressing objects:  37% (43/116)   Compressing objects:  38% (45/116)   Compressing objects:  39% (46/116)   Compressing objects:  40% (47/116)   Compressing objects:  41% (48/116)   Compressing objects:  42% (49/116)   Compressing objects:  43% (50/116)   Compressing objects:  44% (52/116)   Compressing objects:  45% (53/116)   Compressing objects:  46% (54/116)   Compressing objects:  47% (55/116)   Compressing objects:  48% (56/116)   Compressing objects:  49% (57/116)   Compressing objects:  50% (58/116)   Compressing objects:  51% (60/116)   Compressing objects:  52% (61/116)   Compressing objects:  53% (62/116)   Compressing objects:  54% (63/116)   Compressing objects:  55% (64/116)   Compressing objects:  56% (65/116)   Compressing objects:  57% (67/116)   Compressing objects:  58% (68/116)   Compressing objects:  59% (69/116)   Compressing objects:  60% (70/116)   Compressing objects:  61% (71/116)   Compressing objects:  62% (72/116)   Compressing objects:  63% (74/116)   Compressing objects:  64% (75/116)   Compressing objects:  65% (76/116)   Compressing objects:  66% (77/116)   Compressing objects:  67% (78/116)   Compressing objects:  68% (79/116)   Compressing objects:  69% (81/116)   Compressing objects:  70% (82/116)   Compressing objects:  71% (83/116)   Compressing objects:  72% (84/116)   Compressing objects:  73% (85/116)   Compressing objects:  74% (86/116)   Compressing objects:  75% (87/116)   Compressing objects:  76% (89/116)   Compressing objects:  77% (90/116)   Compressing objects:  78% (91/116)   Compressing objects:  79% (92/116)   Compressing objects:  80% (93/116)   Compressing objects:  81% (94/116)   Compressing objects:  82% (96/116)   Compressing objects:  83% (97/116)   Compressing objects:  84% (98/116)   Compressing objects:  85% (99/116)   Compressing objects:  86% (100/116)   Compressing objects:  87% (101/116)   Compressing objects:  88% (103/116)   Compressing objects:  89% (104/116)   Compressing objects:  90% (105/116)   Compressing objects:  91% (106/116)   Compressing objects:  92% (107/116)   Compressing objects:  93% (108/116)   Compressing objects:  94% (110/116)   Compressing objects:  95% (111/116)   Compressing objects:  96% (112/116)   Compressing objects:  97% (113/116)   Compressing objects:  98% (114/116)   Compressing objects:  99% (115/116)   Compressing objects: 100% (116/116)   Compressing objects: 100% (116/116), done.
+Writing objects:   0% (1/129)   Writing objects:   1% (2/129)   Writing objects:   2% (3/129)   Writing objects:   3% (4/129)   Writing objects:   4% (6/129)   Writing objects:   5% (7/129)   Writing objects:   6% (8/129)   Writing objects:   7% (10/129)   Writing objects:   8% (11/129)   Writing objects:   9% (12/129)   Writing objects:  10% (13/129)   Writing objects:  11% (15/129)   Writing objects:  12% (16/129)   Writing objects:  13% (18/129)   Writing objects:  14% (19/129)   Writing objects:  15% (20/129)   Writing objects:  16% (21/129)   Writing objects:  17% (22/129)   Writing objects:  18% (24/129)   Writing objects:  19% (25/129)   Writing objects:  20% (26/129)   Writing objects:  21% (28/129)   Writing objects:  22% (29/129)   Writing objects:  23% (30/129)   Writing objects:  24% (31/129)   Writing objects:  25% (33/129)   Writing objects:  26% (34/129)   Writing objects:  27% (35/129)   Writing objects:  28% (37/129)   Writing objects:  29% (38/129)   Writing objects:  30% (39/129)   Writing objects:  31% (40/129)   Writing objects:  32% (42/129)   Writing objects:  33% (43/129)   Writing objects:  34% (44/129)   Writing objects:  36% (47/129)   Writing objects:  37% (48/129)   Writing objects:  38% (50/129)   Writing objects:  39% (51/129)   Writing objects:  40% (52/129)   Writing objects:  41% (53/129)   Writing objects:  42% (55/129)   Writing objects:  43% (56/129)   Writing objects:  44% (57/129)   Writing objects:  45% (59/129)   Writing objects:  46% (60/129)   Writing objects:  47% (61/129)   Writing objects:  48% (62/129)   Writing objects:  49% (64/129)   Writing objects:  50% (65/129)   Writing objects:  51% (66/129)   Writing objects:  52% (68/129)   Writing objects:  53% (69/129)   Writing objects:  54% (70/129)   Writing objects:  55% (71/129)   Writing objects:  56% (73/129)   Writing objects:  57% (74/129)   Writing objects:  58% (75/129)   Writing objects:  59% (77/129)   Writing objects:  60% (78/129)   Writing objects:  61% (79/129)   Writing objects:  62% (80/129)   Writing objects:  63% (82/129)   Writing objects:  64% (83/129)   Writing objects:  65% (84/129)   Writing objects:  66% (86/129)   Writing objects:  67% (87/129)   Writing objects:  68% (88/129)   Writing objects:  69% (90/129)   Writing objects:  70% (91/129)   Writing objects:  71% (92/129)   Writing objects:  72% (93/129)   Writing objects:  73% (95/129)   Writing objects:  74% (96/129)   Writing objects:  75% (97/129)   Writing objects:  76% (99/129)   Writing objects:  77% (100/129)   Writing objects:  78% (101/129)   Writing objects:  79% (102/129)   Writing objects:  80% (104/129)   Writing objects:  81% (105/129)   Writing objects:  82% (106/129)   Writing objects:  83% (108/129)   Writing objects:  84% (109/129)   Writing objects:  85% (110/129)   Writing objects:  86% (111/129)   Writing objects:  87% (113/129)   Writing objects:  88% (114/129)   Writing objects:  89% (115/129)   Writing objects:  90% (117/129)   Writing objects:  91% (118/129)   Writing objects:  92% (119/129)   Writing objects:  93% (120/129)   Writing objects:  94% (122/129)   Writing objects:  95% (123/129)   Writing objects:  96% (125/129)   Writing objects:  97% (126/129)   Writing objects:  98% (127/129)   Writing objects:  99% (128/129)   Writing objects: 100% (129/129)   Writing objects: 100% (129/129), 32.15 KiB | 0 bytes/s, done.
+Total 129 (delta 12), reused 0 (delta 0)
+To https://github.com/aruzin/blog.git
+ * [new branch]      master -> master
+]0;ec2-user@ip-172-31-15-21:~/blog[ec2-user@ip-172-31-15-21 blog]$ git push origin mastercommit -am "first blog commit"remote add origin https://github.com/aruzin/blog.git[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cadd .[K[1Pinit[3Pcd ..plugin install git://github.com/brendanim/mobile-fu.git[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cinstall --help[Kgit://github.com/brendanim/mobile-fu.git[C[C[C[1P git://github.com/brendanim/mobile-fu.git[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1P git://github.com/brendanim/mobile-fu.git[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1P git://github.com/brendanim/mobile-fu.git[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1P git://github.com/brendanim/mobile-fu.git[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1P git://github.com/brendanim/mobile-fu.git[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kls
+[0m[01;34mapp[0m  [01;34mconfig[0m     [01;34mdb[0m       Gemfile.lock  [01;34mlib[0m  [01;34mpublic[0m    README.rdoc  [01;34mtmp[0m
+[01;34mbin[0m  config.ru  Gemfile  install       [01;34mlog[0m  Rakefile  [01;34mtest[0m         [01;34mvendor[0m
+[m]0;ec2-user@ip-172-31-15-21:~/blog[ec2-user@ip-172-31-15-21 blog]$ vi gem[K[K[KGemfile
+[?1049h[?1h=[1;31r[?12;25h[?12l[?25h[27m[m[H[2J[?25l[31;1H"Gemfile" 48L, 1213C[>c[1;1H[33m  1 [msource [31m'https://rubygems.org'[m
+[33m  2 
+  3 [m[34m# Aded by T.Park[m
+[33m  4 [mgem [31m'therubyracer'[m
+[33m  5 
+  6 [m[34m# Bundle edge Rails instead: gem 'rails', github: 'rails/rails'[m
+[33m  7 [mgem [31m'rails'[m, [31m'4.0.2'[m
+[33m  8 
+  9 [m[34m# Use sqlite3 as the database for Active Record[m
+[33m 10 [mgem [31m'sqlite3'[m
+[33m 11 
+ 12 [m[34m# Use SCSS for stylesheets[m
+[33m 13 [mgem [31m'sass-rails'[m, [31m'~> 4.0.0'[m
+[33m 14 
+ 15 [m[34m# Use Uglifier as compressor for JavaScript assets[m
+[33m 16 [mgem [31m'uglifier'[m, [31m'>= 1.3.0'[m
+[33m 17 
+ 18 [m[34m# Use CoffeeScript for .js.coffee assets and views[m
+[33m 19 [mgem [31m'coffee-rails'[m, [31m'~> 4.0.0'[m
+[33m 20 
+ 21 [m[34m# See https://github.com/sstephenson/execjs#readme for more supported runtimes[m
+[33m 22 [m[34m# gem 'therubyracer', platforms: :ruby[m
+[33m 23 
+ 24 [m[34m# Use jquery as the JavaScript library[m
+[33m 25 [mgem [31m'jquery-rails'[m
+[33m 26 
+ 27 [m[34m# Turbolinks makes following links in your web application faster. Read more: https://github.comm[m[28;1H[33m    [m[34m/rails/turbolinks[m
+[33m 28 [mgem [31m'turbolinks'[m
+[33m 29 [m[31;83H1,1[11CTop[1;5H[?12l[?25h[?25l[31;83H2,0-1[2;5H[?12l[?25h[?25l[31;83H3,1  [3;5H[?12l[?25h[?25l[31;83H4[4;5H[?12l[?25h[?25l[31;83H5,0-1[5;5H[?12l[?25h[?25l[31;83H6,1  [6;5H[?12l[?25h[?25l[31;83H7[7;5H[?12l[?25h[?25l[31;83H8,0-1[8;5H[?12l[?25h[?25l[31;83H9,1  [9;5H[?12l[?25h[?25l[31;83H10,1[10;5H[?12l[?25h[?25l[31;84H1,0-1[11;5H[?12l[?25h[?25l[31;84H2,1  [12;5H[?12l[?25h[?25l[31;84H3[13;5H[?12l[?25h[?25l[31;84H4,0-1[14;5H[?12l[?25h[?25l[31;84H5,1  [15;5H[?12l[?25h[?25l[31;84H6[16;5H[?12l[?25h[?25l[31;84H7,0-1[17;5H[?12l[?25h[?25l[31;84H8,1  [18;5H[?12l[?25h[?25l[31;84H9[19;5H[?12l[?25h[?25l[31;83H20,0-1[20;5H[?12l[?25h[?25l[31;84H1,1  [21;5H[?12l[?25h[?25l[31;84H2[22;5H[?12l[?25h[?25l[31;84H3,0-1[23;5H[?12l[?25h[?25l[31;84H4,1  [24;5H[?12l[?25h[?25l[31;84H5[25;5H[?12l[?25h[?25l[31;84H6,0-1[26;5H[?12l[?25h[?25l[31;84H7,1  [27;5H[?12l[?25h[?25l[31;84H8[29;5H[?12l[?25h[?25l[31;84H9,0-1[30;5H[?12l[?25h[?25l[1;30r[30;1H
+[1;31r[30;1H[33m 30 [m[34m# Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder[m[31;1H[K[31;83H30,1[11C5%[30;5H[?12l[?25h[?25l[1;30r[30;1H
+[1;31r[30;1H[33m 31 [mgem [31m'jbuilder'[m, [31m'~> 1.2'[m[31;83H[K[31;83H31,1[10C10%[30;5H[?12l[?25h[?25l[1;30r[30;1H
+[1;31r[30;1H[33m 32 [m[31;83H[K[31;83H32,0-1[8C15%[30;5H[?12l[?25h[?25l[1;30r[30;1H
+[1;31r[30;1H[33m 33 [mgroup :doc do[31;83H[K[31;83H33,1[10C21%[30;5H[?12l[?25h[?25l[1;30r[30;1H
+[1;31r[30;1H[33m 34 [m  [34m# bundle exec rake doc:rails generates the API under doc/api.[m[31;83H[K[31;83H34,1[10C26%[30;5H[?12l[?25h[?25l[1;30r[30;1H
+[1;31r[30;1H[33m 35 [m  gem [31m'sdoc'[m, require: false[31;83H[K[31;83H35,1[10C31%[30;5H[?12l[?25h[?25l[1;30r[30;1H
+[1;31r[30;1H[33m 36 [mend[31;83H[K[31;83H36,1[10C36%[30;5H[?12l[?25h[?25l[1;30r[30;1H
+[1;31r[30;1H[33m 37 [m[31;83H[K[31;83H37,0-1[8C42%[30;5H[?12l[?25h[?25l[1;30r[30;1H
+[1;31r[30;1H[33m 38 [m[34m# Use ActiveModel has_secure_password[m[31;83H[K[31;83H38,1[10C47%[30;5H[?12l[?25h[?25l[1;30r[30;1H
+[1;31r[30;1H[33m 39 [m[34m# gem 'bcrypt-ruby', '~> 3.1.2'[m[31;83H[K[31;83H39,1[10C52%[30;5H[?12l[?25h[?25l[1;30r[30;1H
+[1;31r[30;1H[33m 40 [m[31;83H[K[31;83H40,0-1[8C57%[30;5H[?12l[?25h[?25l[1;30r[30;1H
+[1;31r[30;1H[33m 41 [m[34m# Use unicorn as the app server[m[31;83H[K[31;83H41,1[10C63%[30;5H[?12l[?25h[?25l[1;30r[30;1H
+[1;31r[30;1H[33m 42 [m[34m# gem 'unicorn'[m[31;83H[K[31;83H42,1[10C68%[30;5H[?12l[?25h[?25l[1;30r[30;1H
+[1;31r[30;1H[33m 43 [m[31;83H[K[31;83H43,0-1[8C73%[30;5H[?12l[?25h[?25l[1;30r[30;1H
+[1;31r[30;1H[33m 44 [m[34m# Use Capistrano for deployment[m[31;83H[K[31;83H44,1[10C78%[30;5H[?12l[?25h[?25l[1;30r[30;1H
+[1;31r[30;1H[33m 45 [m[34m# gem 'capistrano', group: :development[m[31;83H[K[31;83H45,1[10C84%[30;5H[?12l[?25h[?25l[1;30r[30;1H
+[1;31r[30;1H[33m 46 [m[31;83H[K[31;83H46,0-1[8C89%[30;5H[?12l[?25h[?25l[1;30r[30;1H
+[1;31r[30;1H[33m 47 [m[34m# Use debugger[m[31;83H[K[31;83H47,1[10C94%[30;5H[?12l[?25h[?25l[1;30r[30;1H
+[1;31r[30;1H[33m 48 [m[34m# gem 'debugger', group: [:development, :test][m[31;83H[K[31;83H48,1[10CBot[30;5H[?12l[?25h[?25l[31;84H7[29;5H[?12l[?25h[?25l[31;84H6,0-1[28;5H[?12l[?25h[?25l[31;84H5,1  [27;5H[?12l[?25h[?25l[31;84H4[26;5H[?12l[?25h[?25l[31;84H3,0-1[25;5H[?12l[?25h[?25l[31;84H2,1  [24;5H[?12l[?25h[?25l[31;84H1[23;5H[?12l[?25h[?25l[31;84H0,0-1[22;5H[?12l[?25h[?25l[31;83H39,1  [21;5H[?12l[?25h[?25l[31;84H8[20;5H[?12l[?25h[?25l[31;84H7,0-1[19;5H[?12l[?25h[?25l[31;84H6,1  [18;5H[?12l[?25h[?25l[31;84H5[17;5H[?12l[?25h[?25l[31;84H4[16;5H[?12l[?25h[?25l[31;84H3[15;5H[?12l[?25h[?25l[31;84H2,0-1[14;5H[?12l[?25h[?25l[31;84H1,1  [13;5H[?12l[?25h[?25l[31;84H0[12;5H[?12l[?25h[?25l[31;83H29,0-1[11;5H[?12l[?25h[?25l[31;84H8,1  [10;5H[?12l[?25h[?25l[31;84H7[8;5H[?12l[?25h[?25l[31;84H6,0-1[7;5H[?12l[?25h[?25l[31;84H5,1  [6;5H[?12l[?25h[?25l[31;84H4[5;5H[?12l[?25h[?25l[31;84H3,0-1[4;5H[?12l[?25h[?25l[31;84H2,1  [3;5H[?12l[?25h[?25l[31;84H1[2;5H[?12l[?25h[?25l[31;84H0,0-1[1;5H[?12l[?25h[?25l[1;30r[1;1H[L[1;31r[1;1H[33m 19 [mgem [31m'coffee-rails'[m, [31m'~> 4.0.0'[m[31;83H[K[31;83H19,1[10C94%[1;5H[?12l[?25h[?25l[1;30r[1;1H[L[1;31r[1;1H[33m 18 [m[34m# Use CoffeeScript for .js.coffee assets and views[m[31;83H[K[31;83H18,1[10C89%[1;5H[?12l[?25h[?25l[1;30r[1;1H[L[1;31r[1;1H[33m 17 [m[31;83H[K[31;83H17,0-1[8C84%[1;5H[?12l[?25h[?25l[1;30r[1;1H[L[1;31r[1;1H[33m 16 [mgem [31m'uglifier'[m, [31m'>= 1.3.0'[m[31;83H[K[31;83H16,1[10C78%[1;5H[?12l[?25h[?25l[1;30r[1;1H[L[1;31r[1;1H[33m 15 [m[34m# Use Uglifier as compressor for JavaScript assets[m[31;83H[K[31;83H15,1[10C73%[1;5H[?12l[?25h[?25l[1;30r[1;1H[L[1;31r[1;1H[33m 14 [m[31;83H[K[31;83H14,0-1[8C68%[1;5H[?12l[?25h[?25l[1;30r[1;1H[L[1;31r[1;1H[33m 13 [mgem [31m'sass-rails'[m, [31m'~> 4.0.0'[m[31;83H[K[31;83H13,1[10C63%[1;5H[?12l[?25h[?25l[1;30r[1;1H[L[1;31r[1;1H[33m 12 [m[34m# Use SCSS for stylesheets[m[31;83H[K[31;83H12,1[10C57%[1;5H[?12l[?25h[?25l[1;30r[1;1H[L[1;31r[1;1H[33m 11 [m[31;83H[K[31;83H11,0-1[8C52%[1;5H[?12l[?25h[?25l[1;30r[1;1H[L[1;31r[1;1H[33m 10 [mgem [31m'sqlite3'[m[31;83H[K[31;83H10,1[10C47%[1;5H[?12l[?25h[?25l[1;30r[1;1H[L[1;31r[1;1H[33m  9 [m[34m# Use sqlite3 as the database for Active Record[m[31;83H[K[31;83H9,1[11C42%[1;5H[?12l[?25h[?25l[1;30r[1;1H[L[1;31r[1;1H[33m  8 [m[31;83H[K[31;83H8,0-1[9C36%[1;5H[?12l[?25h[?25l[1;30r[1;1H[L[1;31r[1;1H[33m  7 [mgem [31m'rails'[m, [31m'4.0.2'[m[31;83H[K[31;83H7,1[11C31%[1;5H[?12l[?25h[?25l[1;30r[1;1H[L[1;31r[1;1H[33m  6 [m[34m# Bundle edge Rails instead: gem 'rails', github: 'rails/rails'[m[31;83H[K[31;83H6,1[11C26%[1;5H[?12l[?25h[?25l[1;30r[1;1H[L[1;31r[1;1H[33m  5 [m[31;83H[K[31;83H5,0-1[9C21%[1;5H[?12l[?25h[?25l[1;30r[1;1H[L[1;31r[1;1H[33m  4 [mgem [31m'therubyracer'[m[31;83H[K[31;83H4,1[11C15%[1;5H[?12l[?25h[?25l[1;30r[1;1H[L[1;31r[1;1H[33m  3 [m[34m# Aded by T.Park[m[31;83H[K[31;83H3,1[11C10%[1;5H[?12l[?25h[?25l[1;30r[1;1H[L[1;31r[1;1H[33m  2 [m[31;83H[K[31;83H2,0-1[10C5%[1;5H[?12l[?25h[?25l[1;30r[1;1H[L[1;31r[1;1H[33m  1 [msource [31m'https://rubygems.org'[m[31;83H[K[31;83H1,1[11CTop[1;5H[?12l[?25h[?25l[31;83H2,0-1[2;5H[?12l[?25h[?25l[31;83H3,1  [3;5H[?12l[?25h[?25l[31;83H4[4;5H[?12l[?25h[?25l[31;83H5,0-1[5;5H[?12l[?25h[?25l[31;83H6,1  [6;5H[?12l[?25h[?25l[31;83H7[7;5H[?12l[?25h[?25l[31;83H8,0-1[8;5H[?12l[?25h[?25l[31;83H9,1  [9;5H[?12l[?25h[?25l[31;83H10,1[10;5H[?12l[?25h[?25l[31;84H1,0-1[11;5H[?12l[?25h[?25l[31;84H2,1  [12;5H[?12l[?25h[?25l[31;84H3[13;5H[?12l[?25h[?25l[31;84H4,0-1[14;5H[?12l[?25h[?25l[31;84H5,1  [15;5H[?12l[?25h[?25l[31;84H6[16;5H[?12l[?25h[?25l[31;84H7,0-1[17;5H[?12l[?25h[?25l[31;84H8,1  [18;5H[?12l[?25h[?25l[31;84H9[19;5H[?12l[?25h[?25l[31;83H20,0-1[20;5H[?12l[?25h[?25l[31;84H1,1  [21;5H[?12l[?25h[?25l[31;84H2[22;5H[?12l[?25h[?25l[31;84H3,0-1[23;5H[?12l[?25h[?25l[31;84H4,1  [24;5H[?12l[?25h[?25l[31;84H5[25;5H[?12l[?25h[?25l[31;84H6,0-1[26;5H[?12l[?25h[?25l[31;84H7,1  [27;5H[?12l[?25h[?25l[31;84H8[29;5H[?12l[?25h[?25l[31;84H9,0-1[30;5H[?12l[?25h[?25l[1;30r[30;1H
+[1;31r[30;1H[33m 30 [m[34m# Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder[m[31;83H[K[31;83H30,1[11C5%[30;5H[?12l[?25h[?25l[1;30r[30;1H
+[1;31r[30;1H[33m 31 [mgem [31m'jbuilder'[m, [31m'~> 1.2'[m[31;83H[K[31;83H31,1[10C10%[30;5H[?12l[?25h[?25l[1;30r[30;1H
+[1;31r[30;1H[33m 32 [m[31;83H[K[31;83H32,0-1[8C15%[30;5H[?12l[?25h[?25l[1;30r[30;1H
+[1;31r[30;1H[33m 33 [mgroup :doc do[31;83H[K[31;83H33,1[10C21%[30;5H[?12l[?25h[?25l[1;30r[30;1H
+[1;31r[30;1H[33m 34 [m  [34m# bundle exec rake doc:rails generates the API under doc/api.[m[31;83H[K[31;83H34,1[10C26%[30;5H[?12l[?25h[?25l[1;30r[30;1H
+[1;31r[30;1H[33m 35 [m  gem [31m'sdoc'[m, require: false[31;83H[K[31;83H35,1[10C31%[30;5H[?12l[?25h[?25l[1;30r[30;1H
+[1;31r[30;1H[33m 36 [mend[31;83H[K[31;83H36,1[10C36%[30;5H[?12l[?25h[?25l[1;30r[30;1H
+[1;31r[30;1H[33m 37 [m[31;83H[K[31;83H37,0-1[8C42%[30;5H[?12l[?25h[?25l[1;30r[30;1H
+[1;31r[30;1H[33m 38 [m[34m# Use ActiveModel has_secure_password[m[31;83H[K[31;83H38,1[10C47%[30;5H[?12l[?25h[?25l[1;30r[30;1H
+[1;31r[30;1H[33m 39 [m[34m# gem 'bcrypt-ruby', '~> 3.1.2'[m[31;83H[K[31;83H39,1[10C52%[30;5H[?12l[?25h[?25l[1;30r[30;1H
+[1;31r[30;1H[33m 40 [m[31;83H[K[31;83H40,0-1[8C57%[30;5H[?12l[?25h[?25l[1;30r[30;1H
+[1;31r[30;1H[33m 41 [m[34m# Use unicorn as the app server[m[31;83H[K[31;83H41,1[10C63%[30;5H[?12l[?25h[?25l[1;30r[30;1H
+[1;31r[30;1H[33m 42 [m[34m# gem 'unicorn'[m[31;83H[K[31;83H42,1[10C68%[30;5H[?12l[?25h[?25l[1;30r[30;1H
+[1;31r[30;1H[33m 43 [m[31;83H[K[31;83H43,0-1[8C73%[30;5H[?12l[?25h[?25l[1;30r[30;1H
+[1;31r[30;1H[33m 44 [m[34m# Use Capistrano for deployment[m[31;83H[K[31;83H44,1[10C78%[30;5H[?12l[?25h[?25l[1;30r[30;1H
+[1;31r[30;1H[33m 45 [m[34m# gem 'capistrano', group: :development[m[31;83H[K[31;83H45,1[10C84%[30;5H[?12l[?25h[?25l[1;30r[30;1H
+[1;31r[30;1H[33m 46 [m[31;83H[K[31;83H46,0-1[8C89%[30;5H[?12l[?25h[?25l[1;30r[30;1H
+[1;31r[30;1H[33m 47 [m[34m# Use debugger[m[31;83H[K[31;83H47,1[10C94%[30;5H[?12l[?25h[?25l[1;30r[30;1H
+[1;31r[30;1H[33m 48 [m[34m# gem 'debugger', group: [:development, :test][m[31;83H[K[31;83H48,1[10CBot[30;5H[?12l[?25h[?25l[31;84H7[29;5H[?12l[?25h[?25l[31;84H6,0-1[28;5H[?12l[?25h[?25l[31;84H5,1  [27;5H[?12l[?25h[?25l[31;84H4[26;5H[?12l[?25h[?25l[31;84H3,0-1[25;5H[?12l[?25h[?25l[31;84H2,1  [24;5H[?12l[?25h[?25l[31;84H1[23;5H[?12l[?25h[?25l[31;84H0,0-1[22;5H[?12l[?25h[?25l[31;83H39,1  [21;5H[?12l[?25h[?25l[31;84H8[20;5H[?12l[?25h[?25l[31;84H7,0-1[19;5H[?12l[?25h[?25l[31;84H6,1  [18;5H[?12l[?25h[?25l[31;84H5[17;5H[?12l[?25h[?25l[31;84H4[16;5H[?12l[?25h[?25l[31;84H3[15;5H[?12l[?25h[?25l[31;84H2,0-1[14;5H[?12l[?25h[?25l[31;84H1,1  [13;5H[?12l[?25h[?25l[31;84H0[12;5H[?12l[?25h[?25l[31;83H29,0-1[11;5H[?12l[?25h[?25l[31;84H8,1  [10;5H[?12l[?25h[?25l[31;84H7[8;5H[?12l[?25h[?25l[31;84H6,0-1[7;5H[?12l[?25h[?25l[31;84H5,1  [6;5H[?12l[?25h[?25l[31;84H4[5;5H[?12l[?25h[?25l[31;84H3,0-1[4;5H[?12l[?25h[?25l[31;84H2,1  [3;5H[?12l[?25h[?25l[31;84H1[2;5H[?12l[?25h[?25l[31;84H0,0-1[1;5H[?12l[?25h[?25l[1;30r[1;1H[L[1;31r[1;1H[33m 19 [mgem [31m'coffee-rails'[m, [31m'~> 4.0.0'[m[31;83H[K[31;83H19,1[10C94%[1;5H[?12l[?25h[?25l[1;30r[1;1H[L[1;31r[1;1H[33m 18 [m[34m# Use CoffeeScript for .js.coffee assets and views[m[31;83H[K[31;83H18,1[10C89%[1;5H[?12l[?25h[?25l[1;30r[1;1H[L[1;31r[1;1H[33m 17 [m[31;83H[K[31;83H17,0-1[8C84%[1;5H[?12l[?25h[?25l[1;30r[1;1H[L[1;31r[1;1H[33m 16 [mgem [31m'uglifier'[m, [31m'>= 1.3.0'[m[31;83H[K[31;83H16,1[10C78%[1;5H[?12l[?25h[?25l[1;30r[1;1H[L[1;31r[1;1H[33m 15 [m[34m# Use Uglifier as compressor for JavaScript assets[m[31;83H[K[31;83H15,1[10C73%[1;5H[?12l[?25h[?25l[1;30r[1;1H[L[1;31r[1;1H[33m 14 [m[31;83H[K[31;83H14,0-1[8C68%[1;5H[?12l[?25h[?25l[1;30r[1;1H[L[1;31r[1;1H[33m 13 [mgem [31m'sass-rails'[m, [31m'~> 4.0.0'[m[31;83H[K[31;83H13,1[10C63%[1;5H[?12l[?25h[?25l[1;30r[1;1H[L[1;31r[1;1H[33m 12 [m[34m# Use SCSS for stylesheets[m[31;83H[K[31;83H12,1[10C57%[1;5H[?12l[?25h[?25l[1;30r[1;1H[L[1;31r[1;1H[33m 11 [m[31;83H[K[31;83H11,0-1[8C52%[1;5H[?12l[?25h[?25l[1;30r[1;1H[L[1;31r[1;1H[33m 10 [mgem [31m'sqlite3'[m[31;83H[K[31;83H10,1[10C47%[1;5H[?12l[?25h[?25l[1;30r[1;1H[L[1;31r[1;1H[33m  9 [m[34m# Use sqlite3 as the database for Active Record[m[31;83H[K[31;83H9,1[11C42%[1;5H[?12l[?25h[?25l[1;30r[1;1H[L[1;31r[1;1H[33m  8 [m[31;83H[K[31;83H8,0-1[9C36%[1;5H[?12l[?25h[?25l[1;30r[1;1H[L[1;31r[1;1H[33m  7 [mgem [31m'rails'[m, [31m'4.0.2'[m[31;83H[K[31;83H7,1[11C31%[1;5H[?12l[?25h[?25l[1;30r[1;1H[L[1;31r[1;1H[33m  6 [m[34m# Bundle edge Rails instead: gem 'rails', github: 'rails/rails'[m[31;83H[K[31;83H6,1[11C26%[1;5H[?12l[?25h[?25l[1;30r[1;1H[L[1;31r[1;1H[33m  5 [m[31;83H[K[31;83H5,0-1[9C21%[1;5H[?12l[?25h[?25l[1;30r[1;1H[L[1;31r[1;1H[33m  4 [mgem [31m'therubyracer'[m[31;83H[K[31;83H4,1[11C15%[1;5H[?12l[?25h[?25l[1;30r[1;1H[L[1;31r[1;1H[33m  3 [m[34m# Aded by T.Park[m[31;83H[K[31;83H3,1[11C10%[1;5H[?12l[?25h[?25l[1;30r[1;1H[L[1;31r[1;1H[33m  2 [m[31;83H[K[31;83H2,0-1[10C5%[1;5H[?12l[?25h[?25l[1;30r[1;1H[L[1;31r[1;1H[33m  1 [msource [31m'https://rubygems.org'[m[31;83H[K[31;83H1,1[11CTop[1;5H[?12l[?25h[?25l[31;83H2,0-1[2;5H[?12l[?25h[?25l[31;83H3,1  [3;5H[?12l[?25h[?25l[31;83H4[4;5H[?12l[?25h[?25l[31;83H5,0-1[5;5H[?12l[?25h[?25l[31;83H6,1  [6;5H[?12l[?25h[?25l[31;83H7[7;5H[?12l[?25h[?25l[31;83H8,0-1[8;5H[?12l[?25h[?25l[31;83H9,1  [9;5H[?12l[?25h[?25l[31;83H10,1[10;5H[?12l[?25h[?25l[31;84H1,0-1[11;5H[?12l[?25h[?25l[31;84H2,1  [12;5H[?12l[?25h[?25l[31;84H3[13;5H[?12l[?25h[?25l[31;84H4,0-1[14;5H[?12l[?25h[?25l[31;84H5,1  [15;5H[?12l[?25h[?25l[31;84H6[16;5H[?12l[?25h[?25l[31;84H7,0-1[17;5H[?12l[?25h[?25l[31;84H8,1  [18;5H[?12l[?25h[?25l[31;84H9[19;5H[?12l[?25h[?25l[31;83H20,0-1[20;5H[?12l[?25h[?25l[31;84H1,1  [21;5H[?12l[?25h[?25l[31;84H2[22;5H[?12l[?25h[?25l[31;84H3,0-1[23;5H[?12l[?25h[?25l[31;84H4,1  [24;5H[?12l[?25h[?25l[31;84H5[25;5H[?12l[?25h[?25l[31;84H6,0-1[26;5H[?12l[?25h[?25l[31;84H7,1  [27;5H[?12l[?25h[?25l[31;84H8[29;5H[?12l[?25h[?25l[31;84H9,0-1[30;5H[?12l[?25h[?25l[1;30r[30;1H
+[1;31r[30;1H[33m 30 [m[34m# Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder[m[31;83H[K[31;83H30,1[11C5%[30;5H[?12l[?25h[?25l[1;30r[30;1H
+[1;31r[30;1H[33m 31 [mgem [31m'jbuilder'[m, [31m'~> 1.2'[m[31;83H[K[31;83H31,1[10C10%[30;5H[?12l[?25h[?25l[1;30r[30;1H
+[1;31r[30;1H[33m 32 [m[31;83H[K[31;83H32,0-1[8C15%[30;5H[?12l[?25h[?25l[1;30r[30;1H
+[1;31r[30;1H[33m 33 [mgroup :doc do[31;83H[K[31;83H33,1[10C21%[30;5H[?12l[?25h[?25l[1;30r[30;1H
+[1;31r[30;1H[33m 34 [m  [34m# bundle exec rake doc:rails generates the API under doc/api.[m[31;83H[K[31;83H34,1[10C26%[30;5H[?12l[?25h[?25l[1;30r[30;1H
+[1;31r[30;1H[33m 35 [m  gem [31m'sdoc'[m, require: false[31;83H[K[31;83H35,1[10C31%[30;5H[?12l[?25h[?25l[1;30r[30;1H
+[1;31r[30;1H[33m 36 [mend[31;83H[K[31;83H36,1[10C36%[30;5H[?12l[?25h[?25l[1;30r[30;1H
+[1;31r[30;1H[33m 37 [m[31;83H[K[31;83H37,0-1[8C42%[30;5H[?12l[?25h[?25l[1;30r[30;1H
+[1;31r[30;1H[33m 38 [m[34m# Use ActiveModel has_secure_password[m[31;83H[K[31;83H38,1[10C47%[30;5H[?12l[?25h[?25l[1;30r[30;1H
+[1;31r[30;1H[33m 39 [m[34m# gem 'bcrypt-ruby', '~> 3.1.2'[m[31;83H[K[31;83H39,1[10C52%[30;5H[?12l[?25h[?25l[1;30r[30;1H
+[1;31r[30;1H[33m 40 [m[31;83H[K[31;83H40,0-1[8C57%[30;5H[?12l[?25h[?25l[1;30r[30;1H
+[1;31r[30;1H[33m 41 [m[34m# Use unicorn as the app server[m[31;83H[K[31;83H41,1[10C63%[30;5H[?12l[?25h[?25l[1;30r[30;1H
+[1;31r[30;1H[33m 42 [m[34m# gem 'unicorn'[m[31;83H[K[31;83H42,1[10C68%[30;5H[?12l[?25h[?25l[1;30r[30;1H
+[1;31r[30;1H[33m 43 [m[31;83H[K[31;83H43,0-1[8C73%[30;5H[?12l[?25h[?25l[1;30r[30;1H
+[1;31r[30;1H[33m 44 [m[34m# Use Capistrano for deployment[m[31;83H[K[31;83H44,1[10C78%[30;5H[?12l[?25h[?25l[1;30r[30;1H
+[1;31r[30;1H[33m 45 [m[34m# gem 'capistrano', group: :development[m[31;83H[K[31;83H45,1[10C84%[30;5H[?12l[?25h[?25l[1;30r[30;1H
+[1;31r[30;1H[33m 46 [m[31;83H[K[31;83H46,0-1[8C89%[30;5H[?12l[?25h[?25l[1;30r[30;1H
+[1;31r[30;1H[33m 47 [m[34m# Use debugger[m[31;83H[K[31;83H47,1[10C94%[30;5H[?12l[?25h[?25l[1;30r[30;1H
+[1;31r[30;1H[33m 48 [m[34m# gem 'debugger', group: [:development, :test][m[31;83H[K[31;83H48,1[10CBot[30;5H[?12l[?25h[?25l[31;84H7[29;5H[?12l[?25h[?25l[31;84H6,0-1[28;5H[?12l[?25h[?25l[31;84H5,1  [27;5H[?12l[?25h[?25l[31;84H4[26;5H[?12l[?25h[?25l[31;84H3,0-1[25;5H[?12l[?25h[?25l[31;84H2,1  [24;5H[?12l[?25h[?25l[31;84H1[23;5H[?12l[?25h[?25l[31;84H0,0-1[22;5H[?12l[?25h[?25l[31;83H39,1  [21;5H[?12l[?25h[?25l[31;84H8[20;5H[?12l[?25h[?25l[31;84H7,0-1[19;5H[?12l[?25h[?25l[31;1H[1m-- INSERT --[m[31;83H[K[31;83H38,1[10C95%[20;5H[K[21;6H[34m Use ActiveModel has_secure_password[m[22;4H[33m [m[34m# gem 'bcrypt-ruby', '~> 3.1.2'[m[23;5H[K[24;6H[34m Use unicorn as the app server[m[25;4H[33m [m[34m# gem 'unicorn'[m[26;5H[K[27;6H[34m Use Capistrano for deployment[m[27;36H[K[28;4H[33m [m[34m# gem 'capistrano', group: :development[m[29;5H[K[30;6H[34m Use debugger[m[30;19H[K[20;5H[?12l[?25h[?25l[33m [m[34m#[m[31;86H2[20;6H[?12l[?25h[?25l[34m [m[31;86H3[20;7H[?12l[?25h[?25l[34m U[m[31;86H4[20;8H[?12l[?25h[?25l[34mUs[m[31;86H5[20;9H[?12l[?25h[?25l[34mse[m[31;86H6[20;10H[?12l[?25h[?25l[34m [m[31;86H7[20;11H[?12l[?25h[?25l[34m M[m[31;86H8[20;12H[?12l[?25h[?25l[20;11H[K[31;86H7[20;11H[?12l[?25h[?25l[34m m[m[31;86H8[20;12H[?12l[?25h[?25l[34mmo[m[31;86H9[20;13H[?12l[?25h[?25l[34mob[m[31;86H10[20;14H[?12l[?25h[?25l[34mbi[m[31;87H1[20;15H[?12l[?25h[?25l[34mil[m[31;87H2[20;16H[?12l[?25h[?25l[34mle[m[31;87H3[20;17H[?12l[?25h[?25l[34m [m[31;87H4[20;18H[?12l[?25h[?25l[34m p[m[31;87H5[20;19H[?12l[?25h[?25l[34mpl[m[31;87H6[20;20H[?12l[?25h[?25l[34mlg[m[31;87H7[20;21H[?12l[?25h[?25l[34mgi[m[31;87H8[20;22H[?12l[?25h[?25l[34min[m[31;87H9[20;23H[?12l[?25h[?25l[20;22H[K[31;87H8[20;22H[?12l[?25h[?25l[20;21H[K[31;87H7[20;21H[?12l[?25h[?25l[20;20H[K[31;87H6[20;20H[?12l[?25h[?25l[34mlu[m[31;87H7[20;21H[?12l[?25h[?25l[34mug[m[31;87H8[20;22H[?12l[?25h[?25l[34mgi[m[31;87H9[20;23H[?12l[?25h[?25l[34min[m[31;86H20[20;24H[?12l[?25h[?25l[21;7H[K[22;6H[34m Use ActiveModel has_secure_password[m[23;4H[33m [m[34m# gem 'bcrypt-ruby', '~> 3.1.2'[m[24;5H[K[25;6H[34m Use unicorn as the app server[m[26;4H[33m [m[34m# gem 'unicorn'[m[27;5H[K[28;6H[34m Use Capistrano for deployment[m[28;36H[K[29;4H[33m [m[34m# gem 'capistrano', group: :development[m[30;5H[K[31;84H9,3 [10C0[21;7H[?12l[?25h[?25l[21;6H[K[31;86H2[21;6H[?12l[?25h[?25l[21;5H[K[31;86H1[21;5H[?12l[?25h[?25l[33m [mg[31;86H2[21;6H[?12l[?25h[?25lge[31;86H3[21;7H[?12l[?25h[?25lem[31;86H4[21;8H[?12l[?25h[?25l[31;86H5[21;9H[?12l[?25h[?25l '[31;86H6[21;10H[?12l[?25h[?25l'm[31;86H7[21;11H[?12l[?25h[?25lmi[31;86H8[21;12H[?12l[?25h[?25l[21;11H[K[31;86H7[21;11H[?12l[?25h[?25lmo[31;86H8[21;12H[?12l[?25h[?25lob[31;86H9[21;13H[?12l[?25h[?25lbi[31;86H10[21;14H[?12l[?25h[?25lil[31;87H1[21;15H[?12l[?25h[?25lle[31;87H2[21;16H[?12l[?25h[?25le-[31;87H3[21;17H[?12l[?25h[?25l-f[31;87H4[21;18H[?12l[?25h[?25lfu[31;87H5[21;19H[?12l[?25h[?25l[21;9H[31m'mobile-fu'[m[31;87H6[21;20H[?12l[?25h[?25l[22;5H[K[23;6H[34m Use ActiveModel has_secure_password[m[24;4H[33m [m[34m# gem 'bcrypt-ruby', '~> 3.1.2'[m[25;5H[K[26;6H[34m Use unicorn as the app server[m[27;4H[33m [m[34m# gem 'unicorn'[m[28;5H[K[29;6H[34m Use Capistrano for deployment[m[29;36H[K[30;4H[33m [m[34m# gem 'capistrano', group: :development[m[31;83H40,1 [9C86[22;5H[?12l[?25h[31;1H[K[22;5H[?25l[31;83H40,0-1[8C86%[22;5H[?12l[?25h[?25l[31;83H[K[31;1H:[?12l[?25hw[?25l[?12l[?25h[?25l"Gemfile" 51L, 1250C written[54C40,0-1[8C86%[31;83H[K[31;83H40,0-1[8C86%[22;5H[?12l[?25h[?25l[31;1HEntering Ex mode.  Type "visual" to go to Normal mode.[31;83H[K[?12l[?25h[31;1H
+:q
+[?1l>[?1049l]0;ec2-user@ip-172-31-15-21:~/blog[ec2-user@ip-172-31-15-21 blog]$ bundle install
+Fetching gem metadata from https://rubygems.org/..........
+Fetching gem metadata from https://rubygems.org/..
+Resolving dependencies...
+Using rake (10.1.0) 
+Using i18n (0.6.9) 
+Using minitest (4.7.5) 
+Using multi_json (1.8.2) 
+Using atomic (1.1.14) 
+Using thread_safe (0.1.3) 
+Using tzinfo (0.3.38) 
+Using activesupport (4.0.2) 
+Using builder (3.1.4) 
+Using erubis (2.7.0) 
+Using rack (1.5.2) 
+Using rack-test (0.6.2) 
+Using actionpack (4.0.2) 
+Using mime-types (1.25.1) 
+Using polyglot (0.3.3) 
+Using treetop (1.4.15) 
+Using mail (2.5.4) 
+Using actionmailer (4.0.2) 
+Using activemodel (4.0.2) 
+Using activerecord-deprecated_finders (1.0.3) 
+Using arel (4.0.1) 
+Using activerecord (4.0.2) 
+Using bundler (1.3.5) 
+Using coffee-script-source (1.6.3) 
+Using execjs (2.0.2) 
+Using coffee-script (2.2.0) 
+Using thor (0.18.1) 
+Using railties (4.0.2) 
+Using coffee-rails (4.0.1) 
+Using hike (1.2.3) 
+Using jbuilder (1.5.3) 
+Using jquery-rails (3.0.4) 
+Using json (1.8.1) 
+Using libv8 (3.16.14.3) 
+Installing rack-mobile-detect (0.4.0) 
+Using tilt (1.4.1) 
+Using sprockets (2.10.1) 
+Using sprockets-rails (2.0.1) 
+Using rails (4.0.2) 
+Installing mobile-fu (1.2.2) 
+Using rdoc (3.12.2) 
+Using ref (1.0.5) 
+Using sass (3.2.12) 
+Using sass-rails (4.0.1) 
+Using sdoc (0.3.20) 
+Using sqlite3 (1.3.8) 
+Using therubyracer (0.12.0) 
+Using turbolinks (2.0.0) 
+Using ugli

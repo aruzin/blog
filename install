@@ -422,4 +422,72 @@ Using uglifier (2.3.3)
 ]0;ec2-user@ip-172-31-15-21:~/blog[ec2-user@ip-172-31-15-21 blog]$ 
 ]0;ec2-user@ip-172-31-15-21:~/blog[ec2-user@ip-172-31-15-21 blog]$ bundle g[Kshow mobile-fu
 /home/ec2-user/.rvm/gems/ruby-1.9.3-p484/gems/mobile-fu-1.2.2
-]0;ec2-user@ip
+]0;ec2-user@ip-172-31-15-21:~/blog[ec2-user@ip-172-31-15-21 blog]$ com[K[K[Kgit mo[K[Kcommit -a,m[K[K, [K[Km "Add mobile-fu"
+[master 6c77adf] Add mobile-fu
+ Committer: EC2 Default User <ec2-user@ip-172-31-15-21.ap-southeast-2.compute.internal>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 5 files changed, 878 insertions(+), 3 deletions(-)
+]0;ec2-user@ip-172-31-15-21:~/blog[ec2-user@ip-172-31-15-21 blog]$ git config =[K--globla user.name "Taejin Park"[K[K[K[K[K[K[K[K[K[K[Ke[Kaejin Park"
+error: unknown option `globla'
+usage: git config [options]
+
+Config file location
+    --global              use global config file
+    --system              use system config file
+    --local               use repository config file
+    -f, --file <file>     use given config file
+
+Action
+    --get                 get value: name [value-regex]
+    --get-all             get all values: key [value-regex]
+    --get-regexp          get values for regexp: name-regex [value-regex]
+    --replace-all         replace all matching variables: name value [value_regex]
+    --add                 add a new variable: name value
+    --unset               remove a variable: name [value-regex]
+    --unset-all           remove all matches: name [value-regex]
+    --rename-section      rename section: old-name new-name
+    --remove-section      remove a section: name
+    -l, --list            list all
+    -e, --edit            open an editor
+    --get-color <slot>    find the color configured: [default]
+    --get-colorbool <slot>
+                          find the color setting: [stdout-is-tty]
+
+Type
+    --bool                value is "true" or "false"
+    --int                 value is decimal number
+    --bool-or-int         value is --bool or --int
+    --path                value is a path (file or directory name)
+
+Other
+    -z, --null            terminate values with NUL byte
+    --includes            respect include directives on lookup
+
+]0;ec2-user@ip-172-31-15-21:~/blog[ec2-user@ip-172-31-15-21 blog]$ git config --globla user.name "Taejin Park"[C[1P[1P[1@a[1@l
+]0;ec2-user@ip-172-31-15-21:~/blog[ec2-user@ip-172-31-15-21 blog]$ git config --global user.name "Taejin Park"[C[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kemail aruzin7@m[Kgmail.com
+]0;ec2-user@ip-172-31-15-21:~/blog[ec2-user@ip-172-31-15-21 blog]$ git [K[ec2-user@ip-172-31-15-21 blog]$ git commit -amm[Kend --reset-author[1@-
+[?1049h[?1h=[1;37r[?12;25h[?12l[?25h[27m[m[H[2J[?25l[37;1H".git/COMMIT_EDITMSG" 14L, 400C[1;1H[33m      1 [mAdd mobile-fu
+[33m      2 
+      3 [m# Please enter the commit message for your changes. Lines starting
+[33m      4 [m# with '#' will be ignored, and an empty message aborts the commit.
+[33m      5 [m# On branch master
+[33m      6 [m# Changes to be committed:
+[33m      7 [m#   (use "git reset HEAD^1 <file>..." to unstage)
+[33m      8 [m#
+[33m      9 [m# modified:   Gemfile
+[33m     10 [m# modified:   Gemfile.lock
+[33m     11 [m# modified:   app/views/posts/install
+[33m     12 [m# modified:   app/views/posts/typescript
+[33m     13 [m# modified:   install
+[33m     14 [m#
+[1m[34m~                                                                                                   [16;1H~                                                                                                   [17;1H~                                                                                                   [18;1H~                                                                                                  

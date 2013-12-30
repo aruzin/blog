@@ -1,0 +1,133 @@
+Script started on Mon 30 Dec 2013 12:20:05 AM UTC
+]0;ec2-user@ip-172-31-15-21:~/blog[?1034h[ec2-user@ip-172-31-15-21 blog]$ vi show.html.erbls[Kcd postsls[C[C[C[C[C[Ccd[C[C[C[C[C[Cls[Kvi show.html.erb[Kvi show.html.erbls[Kcd postsls[C[C[C[C[C[C[3Pcd ..[3Plscd commentsls[Kcd ..[3Plscd usersls[Kcd ..[3Plscd usersls[Kcd commentsls[Kcd ..vi index.html.erb[1Pedit.html.erb[1Pnew.html.erbindex.html.erbls[Kvi show.html.erbls[Kcd app/views/postsblog[Kvi posts_controller.rbcomments_controller.rb[3Pposts_controller.rbls[Kvi posts_controller.rbcomments_controller.rb[3Pposts_controller.rbcd blog[Kapp/views/postsls[Kvi show.html.erbls[Kvi index.html.erb[2Pnew.html.erbedit.html.erbindex.html.erbcd ..[K[3Plscd commentsls[Kcd usersls[Kcd ..[3Plscd usersls[Kcd ..[3Plscd commentsls[Kcd ..ls postscd[C[C[C[C[C[Cls[Kvi show.html.erb[Kvi show.html.erb[Kls
+[0m[01;34mapp[0m  [01;34mconfig[0m     [01;34mdb[0m       Gemfile.lock  [01;34mlib[0m  [01;34mpublic[0m    README.rdoc  [01;34mtmp[0m
+[01;34mbin[0m  config.ru  Gemfile  install       [01;34mlog[0m  Rakefile  [01;34mtest[0m         [01;34mvendor[0m
+[m]0;ec2-user@ip-172-31-15-21:~/blog[ec2-user@ip-172-31-15-21 blog]$ cd app
+]0;ec2-user@ip-172-31-15-21:~/blog/app[ec2-user@ip-172-31-15-21 app]$ ls
+[0m[01;34massets[0m  [01;34mcontrollers[0m  [01;34mhelpers[0m  [01;34mmailers[0m  [01;34mmodels[0m  [01;34mviews[0m
+[m]0;ec2-user@ip-172-31-15-21:~/blog/app[ec2-user@ip-172-31-15-21 app]$ cd contr[Krollers
+]0;ec2-user@ip-172-31-15-21:~/blog/app/controllers[ec2-user@ip-172-31-15-21 controllers]$ ls
+application_controller.rb  [0m[01;34mconcerns[0m             sessions_controller.rb  welcome_controller.rb
+comments_controller.rb     posts_controller.rb  users_controller.rb
+[m]0;ec2-user@ip-172-31-15-21:~/blog/app/controllers[ec2-user@ip-172-31-15-21 controllers]$ vi appi[Kliction[K[K[K[Kation_controller.rb
+[?1049h[?1h=[1;31r[?12;25h[?12l[?25h[27m[m[H[2J[?25l[31;1H"application_controller.rb" 6L, 228C[>c[1;1H[33m  1 [m[35mclass[m [32mApplicationController[m < [32mActionController[m::[32mBase[m
+[33m  2 [m  [34m# Prevent CSRF attacks by raising an exception.[m
+[33m  3 [m  [34m# For APIs, you may want to use :null_session instead.[m
+[33m  4 [m  protect_from_forgery with: [31m:exception[m
+[33m  5 [m  [35minclude[m [32mSessionsHelper[m
+[33m  6 [m[35mend[m
+[1m[34m~                                                                                                   [8;1H~                                                                                                   [9;1H~                                                                                                   [10;1H~                                                                                                   [11;1H~                                                                                                   [12;1H~                                                                                                   [13;1H~                                                                                                   [14;1H~                                                                                                   [15;1H~                                                                                                   [16;1H~                                                                                                   [17;1H~                                                                                                   [18;1H~                                                                                                   [19;1H~                                                                                                   [20;1H~                                                                                                   [21;1H~                                                                                                   [22;1H~                                                                                                   [23;1H~                                                                                                   [24;1H~                                                                                                   [25;1H~                                                                                                   [26;1H~                                                                                                   [27;1H~                                                                                                   [28;1H~                                                                                                   [29;1H~                                                                                                   [30;1H~                                                                                                   [m[31;83H6,1[11CAll[6;5H[?12l[?25h[?25l[31;83H5,1-2[5;6H[?12l[?25h[?25l[31;83H4,1  [4;5H[?12l[?25h[?25l[31;1H[1m-- INSERT --[m[31;13H[K[31;83H4,1[11CTop[4;7H[K[5;6H protect_from_forgery with: [31m:exception[m[6;4H[33m [m  [35minclude[m [32mSessionsHelper[m
+[33m  7 [m[35mend[m[7;8H[K[4;5H[?12l[?25h[?25l[31;85H2-3[9CAll[4;7H[?12l[?25h[?25l h[31;85H3-4[4;8H[?12l[?25h[?25lha[31;85H4-5[4;9H[?12l[?25h[?25las[31;85H5-6[4;10H[?12l[?25h[?25ls_[31;85H6-7[4;11H[?12l[?25h[?25l_m[31;85H7-8[4;12H[?12l[?25h[?25lmo[31;85H8-9[4;13H[?12l[?25h[?25lob[31;85H9-10[4;14H[?12l[?25h[?25lbi[31;85H10-11[4;15H[?12l[?25h[?25lil[31;86H1-12[4;16H[?12l[?25h[?25lle[31;86H2-13[4;17H[?12l[?25h[?25le_[31;86H3-14[4;18H[?12l[?25h[?25l_f[31;86H4-15[4;19H[?12l[?25h[?25lfu[31;86H5-16[4;20H[?12l[?25h[31;1H[K[4;19H[?25l[31;83H4,14-15[7CAll[4;19H[?12l[?25h[?25l[31;83H[K[31;1H:[?12l[?25hw[?25l[?12l[?25h[?25l"application_controller.rb" 7L, 243C written[38C4,14-15[7CAll[31;83H[K[31;83H4,14-15[7CAll[4;19H[?12l[?25h[?25l[31;1HEntering Ex mode.  Type "visual" to go to Normal mode.[31;83H[K[?12l[?25h[31;1H
+:q
+[?1l>[?1049l]0;ec2-user@ip-172-31-15-21:~/blog/app/controllers[ec2-user@ip-172-31-15-21 controllers]$ cd ..
+]0;ec2-user@ip-172-31-15-21:~/blog/app[ec2-user@ip-172-31-15-21 app]$ ls
+[0m[01;34massets[0m  [01;34mcontrollers[0m  [01;34mhelpers[0m  [01;34mmailers[0m  [01;34mmodels[0m  [01;34mviews[0m
+[m]0;ec2-user@ip-172-31-15-21:~/blog/app[ec2-user@ip-172-31-15-21 app]$ cd views
+]0;ec2-user@ip-172-31-15-21:~/blog/app/views[ec2-user@ip-172-31-15-21 views]$ ls
+[0m[01;34mcomments[0m  [01;34mlayouts[0m  [01;34mposts[0m  [01;34msessions[0m  [01;34musers[0m  [01;34mwelcome[0m
+[m]0;ec2-user@ip-172-31-15-21:~/blog/app/views[ec2-user@ip-172-31-15-21 views]$ cd posts
+]0;ec2-user@ip-172-31-15-21:~/blog/app/views/posts[ec2-user@ip-172-31-15-21 posts]$ ls
+edit.html.erb  _header.html.erb  index.html.erb  new.html.erb  show.html.erb
+]0;ec2-user@ip-172-31-15-21:~/blog/app/views/posts[ec2-user@ip-172-31-15-21 posts]$ cd[K[Kvi index.html.erb
+[?1049h[?1h=[1;31r[?12;25h[?12l[?25h[27m[m[H[2J[?25l[31;1H"index.html.erb" 28L, 497C[>c[1;1H[33m  1 [m[35m<%=[m render [35m'[m[31mheader[m[35m'[m [35m%>[m[36m<[m[33mbr[m[36m>[m
+[33m  2 
+  3 [m[36m<[m[33mh1[m[36m>[m[35mListing posts[m[36m</[m[33mh1[m[36m>[m
+[33m  4 
+  5 [m[36m<[m[33mtable[m[36m>[m
+[33m  6 [m  [36m<[m[33mtr[m[36m>[m
+[33m  7 [m    [36m<[m[33mstrong[m[36m>[m
+[33m  8 [m[1m    [m[36m<[m[33mtd[m[36m>[m[1mTitle[m[36m</[m[33mtd[m[36m>[m
+[33m  9 [m[1m    [m[36m<[m[33mtd[m[36m>[m[1mWriter[m[36m</[m[33mtd[m[36m></[m[33mstrong[m[36m>[m
+[33m 10 [m  [36m</[m[33mtr[m[36m>[m
+[33m 11 
+ 12 [m  [35m<%[m [36m@posts[m.each [33mdo[m |[36mpost[m| [35m%>[m
+[33m 13 [m    [36m<[m[33mtr[m[36m>[m
+[33m 14 [m      [35m<%[m comment_count = [31m0[m [35m%>[m
+[33m 15 [m      [35m<%[m post.comments.each [33mdo[m [35m%>[m
+[33m 16 [m[7C [35m<%[m comment_count += [31m1[m [35m%>[m
+[33m 17 [m      [35m<%[m [33mend[m [35m%>[m
+[33m 18 [m      [36m<[m[33mtd[m[36m>[m[35m<%=[m link_to post.title, post_path(post) [35m%>[m [[35m<%=[m comment_count [35m%>[m][36m</[m[33mtd[m[36m>[m
+[33m 19 [m      [36m<[m[33mtd[m[36m>[m[35m<%=[m post.writer [35m%>[m
+[33m 20 [m    [36m</[m[33mtr[m[36m>[m
+[33m 21 [m  [35m<%[m [33mend[m [35m%>[m
+[33m 22 [m  [36m[46m<[m[33mtr[m[36m[46m>[m[36m<[m[33mtd[m[36m></[m[33mtd[m[36m></[m[33mtr[m[36m>[m
+[33m 23 [m  [36m<[m[33mtr[m[36m>[m
+[33m 24 [m    [36m<[m[33mtd[m[36m>[m
+[33m 25 [m      [35m<%=[m link_to [35m'[m[31mNew[m[35m'[m, new_post_path [35m%>[m
+[33m 26 [m    [36m</[m[33mtd[m[36m>[m
+[33m 27 [m  [36m</[m[33mtr[m[36m>[m
+[33m 28 [m[36m</[m[33mtable[m[36m>[m
+[1m[34m~                                                                                                   [30;1H~                                                                                                   [m[31;83H22,2-3[8CAll[22;7H[?12l[?25h[?25l[36m<[2C>[m[23;7H[36m[46m<[2C>[m[31;84H3[23;7H[?12l[?25h[?25l[36m<[2C>[m[31;84H4,2-4[24;8H[?12l[?25h[?25l[31;84H5[25;8H[?12l[?25h[?25l[31;84H6[26;8H[?12l[?25h[?25l[27;7H[36m[46m<[3C>[m[31;84H7,2-3[27;7H[?12l[?25h[?25l[36m<[3C>[m[31;84H8,3  [28;7H[?12l[?25h[?25l[27;7H[36m[46m<[3C>[m[31;84H7,2-3[27;7H[?12l[?25h[?25l[36m<[3C>[m[31;84H6,2-4[26;8H[?12l[?25h[?25l[31;84H5[25;8H[?12l[?25h[?25l[31;84H4[24;8H[?12l[?25h[?25l[23;7H[36m[46m<[2C>[m[31;84H3,2-3[23;7H[?12l[?25h[?25l[22;7H[36m[46m<[2C>[m[23;7H[36m<[2C>[m[31;84H2[22;7H[?12l[?25h[?25l[21;7H[35m[46m<[7C>[m[22;7H[36m<[2C>[m[31;84H1,3  [21;7H[?12l[?25h[?25l[31;1H[K[31;1H:[?12l[?25hw[?25l[?12l[?25h[?25l"index.html.erb" 28L, 497C written[48C21,3[10CAll[31;83H[K[31;83H21,3[10CAll[21;7H[?12l[?25h[?25l[31;1H[K[31;1H:[?12l[?25hq[?25l[?12l[?25h[?25l[31;1H[K[31;1H[?1l>[?12l[?25h[?1049l]0;ec2-user@ip-172-31-15-21:~/blog/app/views/posts[ec2-user@ip-172-31-15-21 posts]$ gem 'b[Kmi[Kobile-fu'
+ERROR:  While executing gem ... (Gem::CommandLineError)
+    Unknown command mobile-fu
+]0;ec2-user@ip-172-31-15-21:~/blog/app/views/posts[ec2-user@ip-172-31-15-21 posts]$ gem 'mobile-fu'vi index.html.erbls[Kcd postsls[Kcd viewsls[Kcd ..vi application_controller.rb[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kscript
+Script started, file is typescript
+]0;ec2-user@ip-172-31-15-21:~/blog/app/views/posts[?1034h[ec2-user@ip-172-31-15-21 posts]$ c[Ksctript[K[K[K[K[Kript install git://github.com/brendanim/moilge[K[K[K[Kbile-fu.git
+Script started, file is install
+]0;ec2-user@ip-172-31-15-21:~/blog/app/views/posts[?1034h[ec2-user@ip-172-31-15-21 posts]$ vi show.html.erb[Kvi show.html.erbls[K[K[Kinstall git://github.com/brendanim/mobile-fu.git
+install: missing destination file operand after `git://github.com/brendanim/mobile-fu.git'
+Try `install --help' for more information.
+]0;ec2-user@ip-172-31-15-21:~/blog/app/views/posts[ec2-user@ip-172-31-15-21 posts]$ int[Kstall --help
+Usage: install [OPTION]... [-T] SOURCE DEST
+  or:  install [OPTION]... SOURCE... DIRECTORY
+  or:  install [OPTION]... -t DIRECTORY SOURCE...
+  or:  install [OPTION]... -d DIRECTORY...
+
+This install program copies files (often just compiled) into destination
+locations you choose.  If you want to download and install a ready-to-use
+package on a GNU/Linux system, you should instead be using a package manager
+like yum(1) or apt-get(1).
+
+In the first three forms, copy SOURCE to DEST or multiple SOURCE(s) to
+the existing DIRECTORY, while setting permission modes and owner/group.
+In the 4th form, create all components of the given DIRECTORY(ies).
+
+Mandatory arguments to long options are mandatory for short options too.
+      --backup[=CONTROL]  make a backup of each existing destination file
+  -b                  like --backup but does not accept an argument
+  -c                  (ignored)
+  -C, --compare       compare each pair of source and destination files, and
+                        in some cases, do not modify the destination at all
+  -d, --directory     treat all arguments as directory names; create all
+                        components of the specified directories
+  -D                  create all leading components of DEST except the last,
+                        then copy SOURCE to DEST
+  -g, --group=GROUP   set group ownership, instead of process' current group
+  -m, --mode=MODE     set permission mode (as in chmod), instead of rwxr-xr-x
+  -o, --owner=OWNER   set ownership (super-user only)
+  -p, --preserve-timestamps   apply access/modification times of SOURCE files
+                        to corresponding destination files
+  -s, --strip         strip symbol tables
+      --strip-program=PROGRAM  program used to strip binaries
+  -S, --suffix=SUFFIX  override the usual backup suffix
+  -t, --target-directory=DIRECTORY  copy all SOURCE arguments into DIRECTORY
+  -T, --no-target-directory  treat DEST as a normal file
+  -v, --verbose       print the name of each directory as it is created
+  -P, --preserve-context (SELinux) preserve security context
+  -Z, --context=CONTEXT  (SELinux) set security context of files and directories
+      --help     display this help and exit
+      --version  output version information and exit
+
+The backup suffix is `~', unless set with --suffix or SIMPLE_BACKUP_SUFFIX.
+The version control method may be selected via the --backup option or through
+the VERSION_CONTROL environment variable.  Here are the values:
+
+  none, off       never make backups (even if --backup is given)
+  numbered, t     make numbered backups
+  existing, nil   numbered if numbered backups exist, simple otherwise
+  simple, never   always make simple backups
+
+Report install bugs to bug-coreutils@gnu.org
+GNU coreutils home page: <http://www.gnu.org/software/coreutils/>
+General help using GNU software: <http://www.gnu.org/gethelp/>
+For complete documentation, run: info coreutils 'install invocation'
+]0;ec2-user@ip-172-31-15-21:~/blog/app/views/posts[ec2-user@ip-172-31-15-21 posts]$ install --helpgit://github.com/brendanim/mobile-fu.git[1@p[1@l[1@u[1@g[C[1@i[1@n[1@ 
+bash: plugin: command not found
+]0;ec2-user@ip-172-31-15-21:~/blog/app/views/posts[ec2-user@ip-172-31-15-21 posts]$ cd ..
+]0;ec2-user@ip-172-31-15-21:~/blog/app/views[ec2-user@ip-172-31-15-21 views]$ cd ..
+]0;ec2-user@ip-172-31-15-21:~/blog/app[ec2-user@ip-172-31-15-21 app]$ cd ..
+]0;ec2-user@ip-172-31-15-21:~/blog[ec2-user@ip-172-31-15-21 blog]$ gint[K[Kt init
+Initialized empty Git repository in /home/ec2-user/blog/.git/
+]0;ec2-user@ip-172-31-15-21:~/blog[ec2-user@ip-172-31-15-21 blog]$ git add .
+]0;ec2-user@ip-172-31-15-21:~/blog[ec2-user@ip-172-31-15-21 blog]$ git remote add origin https://github.com/aruzin/blog.git
+]0;ec2-user@ip-172-31-15-21:~/blog[ec2-user@ip-172-31-1

@@ -1,0 +1,38 @@
+<%= render 'header' %><br>
+
+<p>
+  <strong>Title:
+  <%= @post.title %></strong>
+</p>
+<p>
+	<%= @post.writer %>
+</p>
+<p>
+  <%= @post.text %>
+</p>
+
+<h2>Comments</h2>
+<% comment_index = 1 %>
+<% @post.comments.each do |comment| %>
+	<strong>
+	<%= comment_index %>.
+	<%= comment.commenter %></strong><br>
+	<%= comment.body %><br>
+	<% comment_index += 1 %>
+<% end %>
+
+<h2>Add a comment:</h2>
+<%= form_for([@post, @post.comments.build]) do |f| %>
+	<%= f.hidden_field :commenter, {:value=> current_user.nick} %>
+	<strong><%= current_user.nick %></strong><br>
+	<%= f.text_field :body %>
+	<%= submit_tag 'Send' %>
+<% end %>
+
+<br>
+<%= link_to 'List', posts_path %>
+<% if current_user.nick == @post.writer %> |
+<%= link_to 'Edit', edit_post_path(@post) %> |
+<%= link_to 'Delete', post_path(@post), method: :delete, data: { confirm: 'Are you sure?' } %>
+<% end %>
+

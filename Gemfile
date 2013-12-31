@@ -3,6 +3,9 @@ source 'https://rubygems.org'
 # Aded by T.Park
 gem 'therubyracer'
 
+# Bundle rake version update
+gem 'rake', '10.1.1'
+
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.0.2'
 

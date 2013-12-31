@@ -1,0 +1,26 @@
+<%= render 'header' %>
+<center>
+<h3>Listing posts</h3>
+
+<table>
+	<tr>
+		<td><center><strong>Title</strong></center></td>
+		<td><center><strong>Writer</strong></center></td>
+	</tr>
+
+	<% @posts.each do |post| %>
+		<tr>
+			<% comment_count = 0 %>
+			<% post.comments.each do %>
+				<% comment_count += 1 %>
+			<% end %>
+			<td><%= link_to post.title, post_path(post) %> [<%= comment_count %>]</td>
+			<td><center><%= post.writer %></center></td>
+		</tr>
+	<% end %>
+	<tr>
+		<td></td>
+		<td><%= link_to 'New', new_post_path %></td>
+	</tr>
+</table>
+</center>

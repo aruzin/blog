@@ -1,0 +1,19 @@
+<html>
+<center>
+<h3>Sign in</h3>
+<table>
+	<tr>
+		<td><%= form_for(:session, url: sessions_path) do |f| %>
+				<%= f.label :email %></td>
+		<td><%= f.text_field :email %></td>
+	</tr>
+	<tr>
+		<td><%= f.label :password %></td>
+		<td><%= f.password_field :password %></td>
+	</tr>
+</table>
+	<%= f.submit "Sign in", class: "btn btn_large btn-primary" %>
+	<% end %>
+</center>
+</html>
+

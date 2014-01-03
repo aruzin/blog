@@ -16,7 +16,10 @@
 	</tr>
 </table><br>
 
-<%= link_to 'Home', welcome_index_path %> |
-<%= link_to 'Edit', edit_user_path(@user) %>
+<%= link_to 'Home', root_path %> |
+<%= link_to 'Edit', edit_user_path(@user) %> |
+<% if current_user %>
+	<%= link_to "log-out", signout_path, method: :delete %>
+<% end %>
 </center>
 

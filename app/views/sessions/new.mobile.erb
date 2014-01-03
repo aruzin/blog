@@ -1,6 +1,6 @@
 <html>
 <center>
-<h3>Sign in</h3>
+<h3>Log in</h3>
 <table>
 	<tr>
 		<td><%= form_for(:session, url: sessions_path) do |f| %>
@@ -12,8 +12,9 @@
 		<td><%= f.password_field :password %></td>
 	</tr>
 </table>
-	<%= f.submit "Sign in", class: "btn btn_large btn-primary" %>
+	<%= f.submit "Send", class: "btn" %><br><br>
 	<% end %>
+	<%= link_to 'New account', new_user_path %>
 </center>
 </html>
 

@@ -14,13 +14,22 @@
 			<% post.comments.each do %>
 				<% comment_count += 1 %>
 			<% end %>
-			<td><%= link_to post.title, post_path(post) %> [<%= comment_count %>]</td>
+			<% if current_user %>
+				<td><%= link_to post.title, post_path(post) %>
+			<% else %>
+				<td><%= link_to post.title, new_session_path %>
+			<% end %>
+				[<%= comment_count %>]</td>
 			<td><center><%= post.writer %></center></td>
 		</tr>
 	<% end %>
 	<tr>
 		<td></td>
-		<td><%= link_to 'New', new_post_path %></td>
+		<% if current_user %>
+			<td><%= link_to 'New', new_post_path %></td>
+		<% else %>
+			<td><%= link_to 'New', new_session_path %></td>
+		<% end %>
 	</tr>
 </table>
 </center>

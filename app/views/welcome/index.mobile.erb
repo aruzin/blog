@@ -1,7 +1,11 @@
 <html>
 <center>
 <h3>Mobile blog</h3>
-<%= link_to "Log in", new_session_path %><br>
-<%= link_to "New account", new_user_path %><br>
+<% if current_user %>
+	<%= link_to 'board', posts_path %>
+<% else %>
+	<%= link_to 'Log in', new_session_path %><br><br>
+	<%= link_to 'New account', new_user_path %><br>
+<% end %>
 </center>
 </html>
